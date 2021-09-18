@@ -86,6 +86,41 @@ html {
   letter-spacing: 8px;
   color: #fff;
 }
+.description__item {
+  text-align: center;
+  padding: 50px 20px;
+}
+.description__item__title {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  color: #23303e;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.description__item__text {
+  color: #818498;
+}
+.description__item a {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: #23303e;
+  -webkit-text-decoration: underline #fad400 4px;
+          text-decoration: underline #fad400 4px;
+}
+.description__item--graphic {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background-size: 100% auto;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #25564b;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description__item--graphic__title {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+}
 @media screen and (min-width: 500px) {
   .header {
     background-image: url("../images/desktop/image-header.jpg");
