@@ -1,2 +1,21 @@
 @import './_reset-styles.styl'
 @import './_tokens.styl'
+
+html
+	font-family ffPrimary
+
+.header
+	background-image url('../images/mobile/image-header.jpg')
+	background-repeat no-repeat
+	background-size 100% 100%
+	padding 20px
+	&__navbar
+		display flex
+		justify-content space-between
+		&__links
+			display none
+	&__hero
+		text-align center
+		margin 80px auto
+		&__title
+			font-family ffSecondary

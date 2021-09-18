@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-family: FontFamilyBody;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  font-family: 'Barlow', sans-serif;
+}
+.header {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar__links {
+  display: none;
+}
+.header__hero {
+  text-align: center;
+  margin: 80px auto;
+}
+.header__hero__title {
+  font-family: 'Fraunces', serif;
+}
