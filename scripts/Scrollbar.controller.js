@@ -1,5 +1,5 @@
 function autoScroll() {
-	var div = document.querySelector('.header');
+	var div = document.querySelector('main');
 	div.style.display = '';
 	var top = div.offsetTop;
 	if (window.scrollTop != top) window.scrollTo(0, top);
