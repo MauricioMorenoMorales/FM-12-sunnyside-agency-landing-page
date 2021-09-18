@@ -53,3 +53,27 @@ html
 			letter-spacing 8px
 			color white
 
+@media screen and (min-width 720px)
+	.header
+		background-image url('../images/desktop/image-header.jpg')
+		background-size auto 100%
+		background-position-x center
+		background-color blue
+		&__navbar
+			&__links
+				display block
+				position static
+				margin 0
+				flex-direction row
+				max-width 455px
+				background-color blue
+				&__item
+					color white
+					&.contact
+						background-color white
+						&:hover
+							background-color #ffffffbb
+			&__hamburger
+				display none
+		&__hero
+			margin-left 10px

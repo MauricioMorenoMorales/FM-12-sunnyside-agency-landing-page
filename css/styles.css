@@ -86,3 +86,34 @@ html {
   letter-spacing: 8px;
   color: #fff;
 }
+@media screen and (min-width: 720px) {
+  .header {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-size: auto 100%;
+    background-position-x: center;
+    background-color: #3dbeff;
+  }
+  .header__navbar__links {
+    display: block;
+    position: static;
+    margin: 0;
+    flex-direction: row;
+    max-width: 455px;
+    background-color: #3dbeff;
+  }
+  .header__navbar__links__item {
+    color: #fff;
+  }
+  .header__navbar__links__item.contact {
+    background-color: #fff;
+  }
+  .header__navbar__links__item.contact:hover {
+    background-color: rgba(255,255,255,0.733);
+  }
+  .header__navbar__hamburger {
+    display: none;
+  }
+  .header__hero {
+    margin-left: 10px;
+  }
+}
