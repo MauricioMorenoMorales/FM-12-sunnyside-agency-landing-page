@@ -86,12 +86,19 @@ html {
   letter-spacing: 8px;
   color: #fff;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 500px) {
   .header {
     background-image: url("../images/desktop/image-header.jpg");
     background-size: auto 100%;
     background-position-x: center;
+  }
+}
+@media screen and (min-width: 720px) {
+  .header {
+    background-size: auto 120%;
+    background-position-y: -90px;
     background-color: #3dbeff;
+    height: 600px;
   }
   .header__navbar__links {
     display: block;
@@ -115,5 +122,9 @@ html {
   }
   .header__hero {
     margin-left: 10px;
+  }
+  .header__hero__title {
+    margin-top: -30px;
+    margin-bottom: 30px;
   }
 }
