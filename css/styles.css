@@ -185,9 +185,33 @@ html {
 .footer__links {
   text-align: center;
   background-color: #8ed3c4;
+  padding-bottom: 30px;
 }
 .footer__links__logo {
   margin-top: 50px;
+}
+.footer__links__sections {
+  padding-top: 20px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 250px;
+  justify-content: space-between;
+}
+.footer__links__sections__item {
+  color: #458c7e;
+  text-decoration: none;
+}
+.footer__links__social {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 150px;
+}
+.footer__links__social__item {
+  cursor: pointer;
+}
+.footer__links__social > svg {
+  cursor: pointer;
 }
 @media screen and (max-width: 346px) {
   .description__item--photography {
