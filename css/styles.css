@@ -182,6 +182,13 @@ html {
   height: 100%;
   width: 100%;
 }
+.footer__links {
+  text-align: center;
+  background-color: #8ed3c4;
+}
+.footer__links__logo {
+  margin-top: 50px;
+}
 @media screen and (max-width: 346px) {
   .description__item--photography {
     margin-top: -105px;
