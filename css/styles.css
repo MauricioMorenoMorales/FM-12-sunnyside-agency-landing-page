@@ -257,3 +257,16 @@ html {
     -ms-grid-column: 2;
   }
 }
+@media screen and (min-width: 1000px) {
+  .testimonials {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .testimonials--item-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .testimonials__item {
+    padding: 0 10px;
+  }
+}
