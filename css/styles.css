@@ -110,16 +110,40 @@ html {
 .description__item--graphic {
   background-image: url("../images/mobile/image-graphic-design.jpg");
   background-size: 100% auto;
-  padding-top: 100%;
+  padding-top: 90%;
   background-repeat: no-repeat;
   text-align: center;
   color: #25564b;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 100px;
 }
 .description__item--graphic__title {
   font-family: 'Fraunces', serif;
   font-size: 3rem;
+}
+.description__item--photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+  background-size: 100% auto;
+  padding-top: 90%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #19536b;
+  margin-top: -60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description__item--photography__title {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+}
+.description__item--photography__text {
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 346px) {
+  .description__item--photography {
+    margin-top: -105px;
+  }
 }
 @media screen and (min-width: 500px) {
   .header {
@@ -128,7 +152,7 @@ html {
     background-position-x: center;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 715px) {
   .header {
     background-size: auto 120%;
     background-position-y: -90px;
@@ -161,5 +185,44 @@ html {
   .header__hero__title {
     margin-top: -30px;
     margin-bottom: 30px;
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text1 image1" "image2 text2" "backgroundtext1 backgroundtext2";
+  }
+  .description__item {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .description__item--image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .description__item--image.image1 {
+    grid-area: image1;
+  }
+  .description__item--photography {
+    margin-top: 0;
+  }
+  .description__item--photography__text {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .description__item--graphic__text {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 715px) {
+  .description__item--image.image1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
   }
 }
