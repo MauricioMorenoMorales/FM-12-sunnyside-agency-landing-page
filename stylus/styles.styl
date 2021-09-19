@@ -124,6 +124,15 @@ html
 			font-size 1.4rem
 			margin-top 0
 
+.footer
+	margin-top 100px
+	&__images
+		display grid
+		grid-template-columns 50% 50%
+		&__item > img
+			height 100%
+			width 100%
+
 @media screen and (max-width 346px)
 	.description__item--photography
 		margin-top -105px
@@ -200,3 +209,5 @@ html
 			justify-content space-between
 		&__item
 			padding 0 10px
+	.footer__images
+		grid-template-columns 25% 25% 25% 25%
